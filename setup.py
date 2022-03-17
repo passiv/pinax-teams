@@ -58,9 +58,7 @@ setup(
     url="http://github.com/pinax/pinax-teams/",
     license="MIT",
     packages=find_packages(),
-    package_data={
-        "teams": []
-    },
+    package_data={"teams": []},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
@@ -79,16 +77,15 @@ setup(
     install_requires=[
         "django>=2.2",
         "django-reversion>=2.0.12",
-        "pinax-invitations>=6.1.2",
         "python-slugify>=3.0.4",
         "Pillow>=2.3.0",
         "django-user-accounts>=2.0.3",
-        "six>=1.9.0"
+        "six>=1.9.0",
     ],
     tests_require=[
         "django-test-plus>=1.0.22",
         "pinax-templates>=1.0.4",
     ],
     test_suite="runtests.runtests",
-    zip_safe=False
+    zip_safe=False,
 )
